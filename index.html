@@ -1,38 +1,301 @@
-<html>
-	<head>
-		<link href="style.css" rel="stylesheet">
-		<title>Avo Meguerditchian's Resume</title>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Avo Meguerditchian - Resume</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 32px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: 600;
+      color: #111;
+    }
+    h1 {
+      font-size: 32px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 24px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #444;
+    }
+    h3 {
+      font-size: 15px;
+      margin-top: 18px;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .contact {
+      font-size: 13px;
+      color: #555;
+    }
+    .contact span {
+      margin-right: 10px;
+    }
+    .section {
+      margin-top: 18px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .summary {
+      margin-top: 8px;
+    }
+    .skills-list,
+    .meta-line {
+      margin: 4px 0;
+    }
+    .skills-label {
+      font-weight: 600;
+      color: #333;
+    }
+    ul {
+      margin: 6px 0 0 18px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .role-title {
+      font-weight: 600;
+    }
+    .role-company {
+      font-weight: 600;
+    }
+    .role-location {
+      font-style: italic;
+      color: #555;
+    }
+    .role-dates {
+      font-size: 13px;
+      color: #555;
+      white-space: nowrap;
+    }
+    .certs-line {
+      margin-top: 6px;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .container {
+        box-shadow: none;
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>AVO MEGUERDITCHIAN</h1>
+      <div class="contact">
+        <span>Boonton Township, NJ</span>
+        <span>|</span>
+        <span>(973) 220-4651</span>
+        <span>|</span>
+        <span><a href="mailto:avo.meguerditchian@gmail.com">avo.meguerditchian@gmail.com</a></span>
+        <span>|</span>
+        <span><a href="https://linkedin.com/in/avomeguerditchian" target="_blank">linkedin.com/in/avomeguerditchian</a></span>
+      </div>
+      <div class="summary">
+        Senior Software Engineer with 20+ years architecting distributed, cloud-native systems at enterprise scale. Deep expertise
+        in high-throughput API design, microservices, and performance engineering&nbsp;– currently at Optum Technology building
+        platforms that process millions of daily transactions. Passionate about applying large-scale systems thinking and AI‑
+        assisted engineering to next-generation infrastructure at leading technology companies.
+      </div>
+    </header>
 
-	<body>
-		<header id="header">
-		<!-- resume header with your name and title -->
-		<h1>YOUR NAME</h1>
-			<hr>
-				YOUR TITLE (EX: SOFTWARE ENGINEERING STUDENT)
-			<hr>
-		</header>
-		<main>
-			<article id="mainLeft">
-				<section>
-					<h2>CONTACT</h2>
-					<!-- contact info including social media -->
-				</section>
-				<section>
-					<h2>SKILLS</h2>
-					<!-- your skills -->
-				</section>
-				<section>
-					<h2>EDUCATION</h2>
-					<!-- your education -->
-				</section>            
-			</article>
-			<article id="mainRight">
-				<section>
-					<h2>WORK EXPERIENCE</h2>
-					<!-- your work experience -->
-				</section>
-			</article>
-		</main>
-	</body>
+    <!-- Technical Skills -->
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <span class="skills-label">Languages &amp; Frameworks:</span>
+        C#, .NET Core, Python, JavaScript, TypeScript, ASP.NET MVC, React, Angular
+      </div>
+      <div class="skills-list">
+        <span class="skills-label">Cloud &amp; Infrastructure:</span>
+        Microsoft Azure (App Services, Functions, API Mgmt, DevOps), Kubernetes, Docker, CI/CD
+      </div>
+      <div class="skills-list">
+        <span class="skills-label">Architecture &amp; Systems:</span>
+        Distributed Systems, Microservices, Event-Driven Architecture, REST APIs, SOA, gRPC
+      </div>
+      <div class="skills-list">
+        <span class="skills-label">Performance &amp; Reliability:</span>
+        Caching, Async/Parallel Processing, Observability, Telemetry, Resiliency Patterns, MTTR Reduction
+      </div>
+      <div class="skills-list">
+        <span class="skills-label">Data:</span>
+        SQL Server, Entity Framework, Redis, Data Pipelines, Reporting &amp; Analytics Platforms
+      </div>
+      <div class="skills-list">
+        <span class="skills-label">AI &amp; Tooling:</span>
+        Generative AI (Optum AI Dojo), GitHub Copilot, LLM Integration, Prompt Engineering, Azure AI
+      </div>
+      <div class="skills-list">
+        <span class="skills-label">Other:</span>
+        Git, Azure DevOps, PowerShell, Agile/Scrum, Security-by-Design, HIPAA/SOC 2 Compliance
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section">
+      <h2>Professional Experience</h2>
+
+      <!-- Optum -->
+      <article>
+        <div class="role-header">
+          <div>
+            <div class="role-company">Optum Technology (UnitedHealth Group)</div>
+            <div class="role-title">Senior Software Engineer&nbsp;– Distributed Systems &amp; Cloud Architecture</div>
+          </div>
+          <div class="role-dates">2021&nbsp;– Present</div>
+        </div>
+        <ul>
+          <li>Migrated enterprise provisioning platforms to cloud-native .NET Core microservices on Azure, increasing throughput
+              by 40% and cutting operational costs by 25% on a system serving millions of transactions daily.</li>
+          <li>Architected distributed, API-first integration layer connecting 10+ downstream enterprise systems, achieving sub‑
+              100ms P99 latency and 99.9%+ uptime across critical healthcare workflows.</li>
+          <li>Engineered end-to-end observability stack (metrics, distributed tracing, alerting) that reduced MTTR by ~40% and
+              provided full visibility across all service boundaries.</li>
+          <li>Led performance engineering initiatives&nbsp;– profiling bottlenecks, tuning async pipelines, and eliminating jitter&nbsp;–
+              improving P95 service responsiveness by 35% under peak load.</li>
+          <li>Championed secure-by-default engineering practices across all architectural layers; achieved 100% compliance with
+              HIPAA and SOC 2 requirements on each release cycle.</li>
+          <li>Integrated AI-assisted development tooling (GitHub Copilot, Optum AI Dojo Generative AI program), accelerating
+              team delivery velocity ~30% and improving automated test coverage.</li>
+          <li>Mentored engineers and led cross-team architecture design reviews for 3 squads, establishing system design
+              patterns and coding standards adopted organization-wide.</li>
+        </ul>
+      </article>
+
+      <!-- Managed Healthcare Associates -->
+      <article>
+        <div class="role-header">
+          <div>
+            <div class="role-company">Managed Healthcare Associates, Inc.</div>
+            <div class="role-title">Senior Software Engineer&nbsp;– Platform Architecture</div>
+          </div>
+          <div class="role-dates">2016&nbsp;– 2021</div>
+        </div>
+        <ul>
+          <li>Architected a modern, service-oriented platform supporting 5M+ member-facing transactions per month, delivering
+              3x scalability improvement and 30% reduction in response latency.</li>
+          <li>Led system modernization effort consolidating 12+ legacy components into a streamlined microservices
+              architecture, improving reliability and eliminating recurring production incidents.</li>
+          <li>Designed distributed integration patterns enabling secure, sub‑50ms communication across 8+ enterprise systems
+              with zero data-loss guarantees.</li>
+          <li>Drove Agile transformation across a 15-person engineering organization; improved sprint predictability by 25% and
+              reduced defect escape rate significantly.</li>
+        </ul>
+      </article>
+
+      <!-- Ricoh -->
+      <article>
+        <div class="role-header">
+          <div>
+            <div class="role-company">Ricoh Americas Corporation</div>
+            <div class="role-title">Principal Software Engineer&nbsp;– Global Systems</div>
+          </div>
+          <div class="role-dates">2012&nbsp;– 2016</div>
+        </div>
+        <ul>
+          <li>Architected a global reporting and analytics platform deployed across multiple regions, supporting 10,000+ users
+              with 99.9% availability and optimized query performance.</li>
+          <li>Introduced Angular and modern service-layer architecture, improving UI responsiveness by 30% and enabling real‑
+              time data visualizations for executive dashboards.</li>
+          <li>Defined long-term enterprise architecture strategy for scalability, performance, and maintainability; presented
+              roadmap to executive stakeholders.</li>
+        </ul>
+      </article>
+
+      <!-- Express Scripts -->
+      <article>
+        <div class="role-header">
+          <div>
+            <div class="role-company">Express Scripts (Medco Health Solutions)</div>
+            <div class="role-title">Senior Programmer Analyst</div>
+          </div>
+          <div class="role-dates">2008&nbsp;– 2012</div>
+        </div>
+        <ul>
+          <li>Designed and implemented distributed workflow automation systems supporting 5,000+ internal users with strict
+              reliability and performance SLAs.</li>
+          <li>Built automated testing frameworks that reduced manual testing time by 20% and improved release quality,
+              enabling faster deployment cadences.</li>
+        </ul>
+      </article>
+
+      <!-- Archive Systems -->
+      <article>
+        <div class="role-header">
+          <div>
+            <div class="role-company">Archive Systems, Inc.</div>
+            <div class="role-title">Application Developer</div>
+          </div>
+          <div class="role-dates">2006&nbsp;– 2008</div>
+        </div>
+        <ul>
+          <li>Developed document management and imaging solutions for 50+ enterprise clients; resolved 95% of production
+              issues within 24 hours.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2>Education</h2>
+      <div>
+        <strong>Bachelor of Science in Computer Science</strong> – New Jersey Institute of Technology
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <h2>Certifications</h2>
+      <div class="certs-line">
+        Optum AI Dojo&nbsp;– Generative AI Certification; Microsoft Certified: Azure AI Fundamentals;
+        Microsoft Certified: Azure Fundamentals; Certified Scrum Master (CSM); Microsoft Certified Solution Developer (MCSD)
+      </div>
+    </section>
+  </div>
+</body>
 </html>
